@@ -8,8 +8,8 @@ from model import Model
 from utils import build_dict, build_dataset, batch_iter
 
 # Uncomment next 2 lines to suppress error and Tensorflow info verbosity. Or change logging levels
-tf.logging.set_verbosity(tf.logging.FATAL)
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+#tf.logging.set_verbosity(tf.logging.FATAL)
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 def add_arguments(parser):
     parser.add_argument("--num_hidden", type=int, default=150, help="Network size.")
