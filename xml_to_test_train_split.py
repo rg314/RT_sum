@@ -87,7 +87,7 @@ try:
         else:
             None
 except:
-    print("Warning, xml extraction failed at COUNT = " + str(count))
+    print("Warning, xml extraction failed at COUNT = " + str(count) + ". Please check for errors in structure of xml file.")
     pass
 
 with open('text//title_to_text.txt', 'r+') as f:
@@ -110,8 +110,10 @@ test_title = title[length_art:].values.tolist()
 
 outputs = [train_article, train_title, test_title, test_article]
 
+for value in outputs:
+    print(len(value))
 
-if (train_article != train_title) | (test_title != test_article):
+if (len(train_article) != len(train_title)) | (len(test_title) != len(test_article)):
     raise ValueError("Test or train data not the same length")
 
 
