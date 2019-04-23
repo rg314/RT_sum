@@ -57,9 +57,19 @@ if not os.path.exists("text/"):
     os.mkdir("text/")
 
 
+def skip_exceptions(it):
+    while True:
+        try:
+            yield next(it)
+        except StopIteration:
+            raise
+        except Exception as e:
+            logging.info('Skipping iteration because of exception {}'.format(e))
+
+
 try:
     count = 0
-    for evt, elem in iterparse('pmc_result_sm.xml'):  # , events=('start', 'end')):
+    for evt, elem in skip_exceptions(iterparse('pmc_result_sm.xml')):  # , events=('start', 'end')):
         if elem.tag == 'article':
             try:
                 output = extract_text2(elem)
