@@ -1,0 +1,72 @@
+electrical tuning of nonlinearities in exciton polariton condensates
+suppressed quenching and strong coupling of purcell enhanced single molecule emission in plasmonic nanocavities
+driven dissipative spin chain model based on exciton polariton condensates
+zero reflectance metafilms for optimal plasmonic sensing
+optical imaging of large gyroid grains in block copolymer templates by confined crystallization
+laser induced reduction and in situ optical spectroscopy of individual plasmonic copper nanoparticles for catalytic reactions
+sers of individual nanoparticles on a mirror size does matter but so does shape
+large scale ordering of nanoparticles using viscoelastic shear processing
+the crucial role of charge in thermoresponsive polymer assisted reversible dis assembly of gold nanoparticles
+polymer assisted self assembly of gold nanoparticle monolayers and their dynamical switching
+photo rechargeable organo halide perovskite batteries
+fluorescence enhancement and strong coupling in faceted plasmonic nanocavities
+generation of quantized polaritons below the condensation threshold
+mapping nanoscale hotspots with single molecule emitters assembled into plasmonic nanocavities using dna origami
+suppression of fluorescence quenching and strong coupling in plasmonic nanocavities
+gyroid optical metamaterials calculating the effective permittivity of multidomain samples
+strong coupling of localized surface plasmons to excitons in light harvesting complexes
+one step fabrication of hollow channel gold nanoflowers with excellent catalytic performance and large single particle sers activity
+roll to roll fabrication of touch responsive cellulose photonic laminates
+mapping sers in cb au plasmonic nanoaggregates
+observing single molecules complexing with cucurbit uril through nanogap surface enhanced raman spectroscopy
+spatiotemporal dynamics and control of strong coupling in plasmonic nanocavities
+classical description of light
+spectrally resolved surface plasmon resonance dispersion using half ball optics
+quantum electrodynamics at room temperature coupling a single vibrating molecule with a plasmonic nanocavity
+dynamic and light switchable self assembled plasmonic metafilms
+quantum mechanical effects in plasmonic structures with subnanometre gaps
+monitoring early stage nanoparticle assembly in microdroplets by optical spectroscopy and sers
+light induced actuating nanotransducers
+electrically controlled nano and micro actuation in memristive switching devices with on chip gas encapsulation
+in situ observations of phase transitions in metastable nickel carbon nanocomposites
+thermo responsive actuation of a dna origami flexor
+core shell gold nanorod zirconium based metal organic framework composites as in situ size selective raman probes
+plasmonic tunnel junctions for single molecule redox chemistry
+tuning of structural colors like a chameleon enabled by shape memory polymers
+blocking hot electron emission by sio coating plasmonic nanostructures
+a one piece printed flexure translation stage for open source microscopy
+single molecule strong coupling at room temperature in plasmonic nanocavities
+tracking optical and electronic behaviour of quantum contacts in sub nanometre plasmonic cavities
+plasmon directed polymerization regulating polymer growth with light
+revealing nanostructures through plasmon polarimetry
+a sub femtojoule electrical spin switch based on optically trapped polariton condensates
+room temperature optical picocavities below nm accessing single atom geometries
+smart supramolecular sensing with cucurbit urils probing hydrogen bonding with sers
+interrogating nanojunctions using ultraconfined acoustoplasmonic coupling
+pulsed molecular optomechanics in plasmonic nanocavities from nonlinear vibrational instabilities to bond breaking
+strong coupling of wse in ultra compact plasmonic nanocavities at room temperature
+understanding the plasmonics of nanostructured atomic force microscopy tips
+controlling self assembly in gyroid terpolymer films by solvent vapor annealing
+how light is emitted by plasmonic metals
+anomalous spectral shift of near and far field plasmonic resonances in nanogaps
+light directed tuning of plasmon resonances via plasmon induced polymerization using hot electrons
+anomalously large spectral shifts near the quantum tunnelling limit in plasmonic rulers with subatomic resolution
+stochastic spin flips in polariton condensates nonlinear tuning from ghz to sub hz
+linking classical and molecular optomechanics descriptions of sers
+actuating single nano oscillators with light
+group theoretical route to deterministic weyl points in chiral photonic lattices
+single molecule optomechanics in picocavities 
+tunable magnetic alignment between trapped exciton polariton condensates
+near field optical drilling of sub lambda pits in thin polymer films
+polarisation selective hotspots in metallic ring stack arrays
+electrical control of quantum dot fine structure splitting for high fidelity hole spin initialization
+spin order and phase transitions in chains of polariton condensates
+synchronization crossover of polariton condensates in weakly disordered lattices
+gap dependent coupling of ag au nanoparticle heterodimers using dna origami based self assembly
+precise measurements of the dipole moment and polarizability of the neutral exciton and positive trion in a single quantum dot
+strain assisted optomechanical coupling of polariton condensate spin to a micromechanical resonator
+tracking optical welding through groove modes in plasmonic nanocavities
+generating bulk scale ordered optical materials using shear assembly in viscoelastic media
+optimizing sers from gold nanoparticle clusters addressing the near field by an embedded chain plasmon model
+tracking nanoelectrochemistry using individual plasmonic nanocavities
+plasmonic response and sers modulation in electrochemical applied potentials

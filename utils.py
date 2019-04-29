@@ -6,6 +6,7 @@ import numpy as np
 from gensim.models.keyedvectors import KeyedVectors
 from gensim.test.utils import get_tmpfile
 from gensim.scripts.glove2word2vec import glove2word2vec
+import pysnooper
 
 
 train_article_path = "input_data/train.article.txt"
@@ -20,7 +21,7 @@ def clean_str(sentence):
 
 
 def get_text_list(data_path, toy):
-    with open (data_path, "r", encoding="utf-8") as f:
+    with open(data_path, "r", encoding="utf-8") as f:
         if not toy:
             return [clean_str(x.strip()) for x in f.readlines()]
         else:
@@ -71,17 +72,26 @@ def build_dataset(step, word_dict, article_max_len, summary_max_len, toy=False):
         raise NotImplementedError
 
     x = [word_tokenize(d) for d in article_list]
+
     x = [[word_dict.get(w, word_dict["<unk>"]) for w in d] for d in x]
+    # makes dict for each word
     x = [d[:article_max_len] for d in x]
+    # i think this line is not ness and could just be plugged in below as for y data.
+    # cuts data to size based on max length
     x = [d + (article_max_len - len(d)) * [word_dict["<padding>"]] for d in x]
-    
+    # appends cut data and new lengths into padding part of word dict
+    # also looks like its cutting part of the last word in the data set
+
     if step == "valid":
         return x
-    else:        
+    else:
         y = [word_tokenize(d) for d in title_list]
         y = [[word_dict.get(w, word_dict["<unk>"]) for w in d] for d in y]
         y = [d[:(summary_max_len - 1)] for d in y]
-        return x, y
+
+    # does the same for the x data.
+
+    return x, y
 
 
 def batch_iter(inputs, outputs, batch_size, num_epochs):
