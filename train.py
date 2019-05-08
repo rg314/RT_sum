@@ -7,6 +7,7 @@ import os
 from model import Model
 from utils import build_dict, build_dataset, batch_iter
 
+
 # Uncomment next 2 lines to suppress error and Tensorflow info verbosity. Or change logging levels
 # tf.logging.set_verbosity(tf.logging.FATAL)
 #os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -102,25 +103,25 @@ with tf.Session() as sess:
             model.decoder_target: batch_decoder_output
         }
 
-        #cells are created with a intial state all the encoding and decoding happens at this point.
+        # cells are created with a intial state all the encoding and decoding happens at this point.
 
-            #         fw_cells = [self.cell(self.num_hidden) for _ in range(self.num_layers)]
-            # bw_cells = [self.cell(self.num_hidden) for _ in range(self.num_layers)]
-            # fw_cells = [rnn.DropoutWrapper(cell) for cell in fw_cells]
-            # bw_cells = [rnn.DropoutWrapper(cell) for cell in bw_cells]
+        #         fw_cells = [self.cell(self.num_hidden) for _ in range(self.num_layers)]
+        # bw_cells = [self.cell(self.num_hidden) for _ in range(self.num_layers)]
+        # fw_cells = [rnn.DropoutWrapper(cell) for cell in fw_cells]
+        # bw_cells = [rnn.DropoutWrapper(cell) for cell in bw_cells]
 
-            # encoder_outputs, encoder_state_fw, encoder_state_bw = tf.contrib.rnn.stack_bidirectional_dynamic_rnn(
-            #     fw_cells, bw_cells, self.encoder_emb_inp,
-            #     sequence_length=self.X_len, time_major=True, dtype=tf.float32)
-            # self.encoder_output = tf.concat(encoder_outputs, 2)
-            # encoder_state_c = tf.concat((encoder_state_fw[0].c, encoder_state_bw[0].c), 1)
-            # encoder_state_h = tf.concat((encoder_state_fw[0].h, encoder_state_bw[0].h), 1)
-            # self.encoder_state = rnn.LSTMStateTuple(c=encoder_state_c, h=encoder_state_h)
+        # encoder_outputs, encoder_state_fw, encoder_state_bw = tf.contrib.rnn.stack_bidirectional_dynamic_rnn(
+        #     fw_cells, bw_cells, self.encoder_emb_inp,
+        #     sequence_length=self.X_len, time_major=True, dtype=tf.float32)
+        # self.encoder_output = tf.concat(encoder_outputs, 2)
+        # encoder_state_c = tf.concat((encoder_state_fw[0].c, encoder_state_bw[0].c), 1)
+        # encoder_state_h = tf.concat((encoder_state_fw[0].h, encoder_state_bw[0].h), 1)
+        # self.encoder_state = rnn.LSTMStateTuple(c=encoder_state_c, h=encoder_state_h)
 
-        #This essentially creates the bidirectional component of the rnn. states of the fw and bw cells are concat together to give a state of the LSTM cell.
+        # This essentially creates the bidirectional component of the rnn. states of the fw and bw cells are concat together to give a state of the LSTM cell.
 
-          # Stores two elements: `(c, h)`, in that order. Where `c` is the hidden state
-          # and `h` is the output.
+        # Stores two elements: `(c, h)`, in that order. Where `c` is the hidden state
+        # and `h` is the output.
 
         # decoding uses BahdanauAttention model
 

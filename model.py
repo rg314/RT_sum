@@ -5,7 +5,6 @@ import pysnooper
 
 
 class Model(object):
-    @pysnooper.snoop()
     def __init__(self, reversed_dict, article_max_len, summary_max_len, args, forward_only=False):
         self.vocabulary_size = len(reversed_dict)
         self.embedding_size = args.embedding_size
