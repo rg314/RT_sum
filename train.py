@@ -50,8 +50,8 @@ word_dict, reversed_dict, article_max_len, summary_max_len = build_dict("train",
 # build_dict for training data and test data
 # 1) Re function used to further clean the text. This is why there is sometimes . . found in the input files as this is already done for data preperations
 # 2) Words are tokenized using NLTK
-# 3) Appends all tokenized words to a list. note that .mostcommon is called to find the most common tokens.
-# 4) adds most commoned words to dict in the from of {token: word}
+# 3) Appends all tokenized words to a list. note that .most common is called to find the most common tokens.
+# 4) adds most common words to dict in the from of {token: word}
 # 5) also forms reversed dict {word: token}
 # 6) max length title = 15 and max length = article = 150. This is number of tokens
 
@@ -103,7 +103,7 @@ with tf.Session() as sess:
             model.decoder_target: batch_decoder_output
         }
 
-        # cells are created with a intial state all the encoding and decoding happens at this point.
+        # cells are created with a initial state all the encoding and decoding happens at this point.
 
         #         fw_cells = [self.cell(self.num_hidden) for _ in range(self.num_layers)]
         # bw_cells = [self.cell(self.num_hidden) for _ in range(self.num_layers)]
